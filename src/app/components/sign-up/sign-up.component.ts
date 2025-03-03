@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UserService} from '../../services/user.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css'
 })
-export class SignUpComponent {
+export class SignUpComponent{
+  email: string = '';
+  name: string = '';
+  password: string = '';
+  confirmPassword: string = '';
 
+  constructor(private userService: UserService) {
+  }
 }

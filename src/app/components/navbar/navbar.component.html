@@ -2,8 +2,7 @@
   <span>Sothbey`s Killer</span>
   <a mat-raised-button>Auctions</a>
   <div class="spacer"></div>
-
-  <a *ngIf="!authService.isAuthenticated()" mat-raised-button>Sign-in</a>
-  <a *ngIf="!authService.isAuthenticated()" mat-raised-button>Sign-up</a>
-  <a *ngIf="authService.isAuthenticated()" mat-raised-button>Log Out({{authService.user?.email}})</a>
+  <a *ngIf="!userService.isAuthenticated()" mat-raised-button>Sign-in</a>
+  <a *ngIf="!userService.isAuthenticated()" mat-raised-button>Sign-up</a>
+  <a *ngIf="userService.isAuthenticated()" mat-raised-button>Log Out({{userService.user?.email}})</a>
 </mat-toolbar>

@@ -1,0 +1,8 @@
+.text-primary{
+  color: var(--mat-sys-primary);
+  margin-bottom: 1rem !important;
+}
+
+.card-wrapper{
+  margin: 0.25rem !important;
+}
