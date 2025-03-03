@@ -1,0 +1,16 @@
+.card{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.card-content{
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+.text-primary{
+  color: var(--mat-sys-primary);
+  margin-bottom: 1rem !important;
+}
